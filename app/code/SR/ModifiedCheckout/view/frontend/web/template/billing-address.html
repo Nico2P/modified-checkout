@@ -7,9 +7,19 @@
             <span data-bind="i18n: 'This address is also my billing address'"></span>
         </label>
     </div>
+    <div class="addressBillingBlock" data-bind="visible: !isAddressSameAsShipping()"></div>
     <fieldset class="fieldset">
         <!-- ko template: 'SR_ModifiedCheckout/billing-address/list' --><!-- /ko -->
         <!-- ko template: 'SR_ModifiedCheckout/billing-address/form' --><!-- /ko -->
     </fieldset>
 
 </div>
+
+
+
+
+
+
+
+
+
